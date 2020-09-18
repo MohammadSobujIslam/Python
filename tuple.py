@@ -28,3 +28,21 @@ print(tupl2)
 tupl3=tuple(tupl1)
 tupl3=tuple(tupl)
 print(tupl3)
+# unpacking tuple or list
+# first unpack in tuple
+tuple_unpack=(11,2,4,4)
+result=tuple_unpack[0]*tuple_unpack[1]*tuple_unpack[2]
+x=tuple_unpack[0]
+y=tuple_unpack[1]
+z=tuple_unpack[2]
+print(tuple_unpack)
+print(result)
+print(x)
+(a,b,c,d)=tuple_unpack
+print(b)
+# unpack in list
+
+list_line=[3,6,7]
+(m,n,o)=list_line
+print(m)
+
