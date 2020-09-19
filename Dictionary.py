@@ -62,3 +62,15 @@ a=4
 b=44
 print('A is a small value') if a>b else print('b is a large value')
 print("A") if a > b else print("=") if a == b else print("B")
+phone=input("phone: ")
+
+digit_map={
+    '1':'One',
+    '2':'Two',
+    '3':'Three',
+    '4':'four'
+}
+output=""
+for char in phone:
+    output+=digit_map.get(char,'!')+' '
+print(output) 
