@@ -58,5 +58,7 @@ con_dict=dict(brand='apple',price=100000,model='I phone X',counry='america')
 print(con_dict)
 
 
-
-
+a=4
+b=44
+print('A is a small value') if a>b else print('b is a large value')
+print("A") if a > b else print("=") if a == b else print("B")
