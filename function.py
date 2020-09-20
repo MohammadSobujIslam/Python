@@ -24,7 +24,7 @@ result=number_add(2,46,6)
 print(result)   
 
 def f_tuple(*kids):
-    print("your tuple value " + kids[-2])
+    print("your tuple value " + kids[-1])
 
 f_tuple('email','tobias','lonus')    
 
@@ -49,8 +49,11 @@ def my_function(food):
       for x in food:
           print(x)
 
-#fruits = ["apple", "banana", "cherry"]
+fruits = ["apple", "banana", "cherry"]
 
 my_function(["apple", "banana", "cherry"])
+print('*************')
+my_function(fruits)
 def myfunction():
   pass
+
