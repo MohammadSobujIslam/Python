@@ -57,3 +57,40 @@ my_function(fruits)
 def myfunction():
   pass
 
+
+# keyword arguments 
+
+def great_user(first_name, last_name):
+    print(f"hi {first_name} {last_name}")
+    
+
+
+great_user('islam','sobuj')  
+great_user(last_name='islam',first_name='sobuj')  
+great_user('hasan',last_name='razib')
+
+def squires(number):
+    #return number**2
+    print(number**2)
+
+    #python bydeafult return None
+    #None means absens of numbers
+
+
+
+rasalt=squires(4)
+print(rasalt)
+# exception error handle
+try:
+    age=int(input('Age: '))
+    income=3000
+    risk=income/age
+    print(age)
+except ZeroDivisionError:
+    print("Age cannot be zero")    
+except ValueError:
+    print("Invalid massage value")    
+
+
+
+ 
