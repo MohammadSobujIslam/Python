@@ -68,7 +68,6 @@ arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
 
 print(arr[1, 1:4])
 
-'''
 # Numpy data type
 arrr=np.array([1,2,3,4,5,6,7,8,9,0])
 print(arrr.dtype)
@@ -120,8 +119,95 @@ arr = np.array([1, 2, 3, 4, 5])
 
 x = arr.copy()
 y = arr.view()
+# Numpy =Numerical python
 
 print(x.base)
 print(y.base)
 print(arr.base)
+nw= arr.astype(int)
+print(nw)
+print(nw.dtype)
+c=arr.copy()
+v=arr.view()
+print(c)
+print(v)
+v[0]=100
+c[1]=400
+print(c)
+print(v)
+arr = np.array([1, 2, 3, 4, 5])
+x = arr.view()
+arr[0] = 42
 
+print(arr)
+print(x)
+arr=np.array([[1,3,4,5,6],[2,78,22,4,6]])
+print(arr.shape)
+print(arr.shape)
+ara=np.array([1,2,3,4], ndmin=5)
+print(ara)
+print(ara.shape)
+arr=np.array([[[1,2,3],[2,4,6],[2,1,3],[5,7,8]],[[5,6,8,],[1,2,4],[23,5,6],[5,9,0]]])
+print(arr)
+print(arr.shape)
+arr = np.array([1,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+
+newarr = arr.reshape(4, 3)
+
+print(newarr)
+print(newarr.shape)
+
+'''
+arr=np.array([2,4,6,8,10],ndmin=2)
+print(arr)
+print(arr.shape)
+print(arr.dtype)
+arr=np.array([2,4,6,8,10],ndmin=5)
+print(arr)
+print(arr.shape)
+arr=np.array([[1,3,5,5],[1,3,5,5],[1,3,5,5],['ao','e','b','r']])
+print(arr)
+print(arr.shape)
+print(np.__version__)
+print(arr.shape)
+print(type(arr))
+arr=np.array(43)
+print(arr)
+print(type(arr))
+print(arr.shape)
+arr_1d=np.array([1,2,3,4])
+print(arr_1d)
+print(type(arr_1d))
+print(arr_1d.shape)
+print(arr_1d.dtype)
+
+ar_2d=np.array([[1,3],[2,5]])
+print(ar_2d)
+print(ar_2d.ndim)
+list_arr=[[1,6,4,4],
+[3,5,67,77,8,8],
+[84,6,7]
+]
+print(list_arr)
+# finally i can understand list are array object(ndarray) not same(list!=ndarray)
+ar_3d=np.array([[[3,4,5],[3,4,5]]])
+print(ar_3d)
+print(ar_3d.shape)
+print(ar_3d.ndim)
+ar_higher=np.array([3],ndmin=6)
+print(ar_higher)
+print(ar_higher.ndim)
+a=ar_higher[:]
+print(a,8)
+arr=np.array([1,2,3,4,5,6])
+
+print(arr[0])
+print(arr[-4:-1])
+print(arr[0]+arr[3])
+ar_2d=np.array([[1,3,4,6,7,17,8,8],[3,5,78,7,99,99,2,5]])
+
+print(ar_2d[1,5])
+print(ar_2d.size)
+print(ar_2d.shape)
+arr=np.array([[[1,2,3],[2,4,6],[2,1,3],[5,7,8]],[[5,6,8,],[1,2,4],[23,5,6],[5,9,0]]])
+print(arr.shape)
