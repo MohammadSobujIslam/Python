@@ -1,0 +1,12 @@
+import numpy as np
+arr=np.array([1,3,5,6,78,8,9])
+x=np.where(arr==9)
+print(x)
+y=np.where(arr%2==1)
+print(y)
+s=np.searchsorted(arr,5)
+print(s)
+sr=np.searchsorted(arr,5,side='right')
+print(sr)
+mltp=s=np.searchsorted(arr,[1,3,4])
+print(mltp)
